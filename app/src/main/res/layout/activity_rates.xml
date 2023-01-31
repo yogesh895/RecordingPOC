@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutR"
+    tools:context=".RatesActivity">
+
+
+    <TextView
+        android:id="@+id/skipTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:text="Skip"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20dp" />
+
+    <TextView
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginEnd="-1dp"
+        android:autoSizeTextType="uniform"
+        android:text="Rate your experience"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewP1"
+        android:layout_width="wrap_content"
+        android:layout_height="313dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="186dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71" />
+
+    <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+        android:id="@+id/dotIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginBottom="175dp"
+        app:dampingRatio="0.5"
+        app:dotsColor="#fff"
+        app:dotsCornerRadius="9dp"
+        app:dotsSize="14dp"
+        app:dotsSpacing="4dp"
+        app:dotsStrokeColor="#fff"
+        app:dotsStrokeWidth="2dp"
+        app:stiffness="300" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sendRates"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/ripple"
+        android:text="Send Rating"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="28dp"
+        android:textStyle="normal"
+        android:textAppearance="@style/MaterialAlertDialog.Material3"/>
+
+</RelativeLayout>

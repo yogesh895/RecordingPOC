@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">msgshareapp</string>
+    <string name="app_name">Model Viewer</string>
+    <string name="allow">ALLOW</string>
+    <string name="submit">SUBMIT</string>
 </resources>

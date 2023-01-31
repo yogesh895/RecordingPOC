@@ -17,6 +17,15 @@
         android:layout_marginTop="63dp"
         android:text="Show Toast" />
 
+
+    <Button
+        android:id="@+id/btnRecordBabe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="127dp"
+        android:text="YOYO" />
+
     <EditText
         android:id="@+id/etUserMessage"
         android:layout_width="match_parent"
@@ -31,15 +40,36 @@
         android:id="@+id/btnSendMsg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="163dp"
+        android:layout_marginTop="250dp"
         android:background="@color/design_default_color_secondary"
         android:text="Send Data to Next Activity" />
 
     <Button
-        android:id="@+id/shareBtn"
-        android:layout_width="match_parent"
+        android:id="@+id/recycleViewBtn"
+        android:layout_width="389dp"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        android:background="@color/design_default_color_secondary"
+        android:text="Recycler view Activity" />
+
+    <Button
+        android:id="@+id/shareBtn"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="400dp"
         android:text="Share to other App" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOYOYOYO"
+        android:textColor="@color/colorAccent"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </RelativeLayout>
